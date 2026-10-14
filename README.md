@@ -21,5 +21,6 @@ Tiempo de ejecución: 80.177215 segundos
 
 Discos: 64
 Movimientos necesarios: 18,446,744,073,709,551,615
+
 EN ESTE ÚLTIMO TIENE MUCHOS MOVIMIENTOS POR LO QUE EL PROGRAMA TARDA EN MOSTRAR EL RESULTADO, ESPERÉ COMO UNA HORA Y SEGUÍA SIN MOSTRAR EL TIEMPO, es imposible saber cuánto tiempo se tardaría, aunque lo busqué en Google y me dijo: Tiempo de ejecución: Cientos de miles de millones de años. El programa jamás terminará de ejecutarse; tendrías que detenerlo a la fuerza cerrando la terminal.
 En la torre de Hanói cada disco extra multiplica el tiempo y la cantidad de movimientos por dos, también me dí cuenta que es muy complicado para la máquina ejecutar este programa cuando son cantidades grandes de discos.
