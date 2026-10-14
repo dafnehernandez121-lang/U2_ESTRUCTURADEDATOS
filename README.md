@@ -1,7 +1,7 @@
 # U2_ESTRUCTURADEDATOS
 Repositorio de la unidad 2
 
-#Torre Hanoi
+ # Torre Hanoi
 
 El programa tiene dos métodos torre_hanoi(n, origen, auxiliar, destino). Es recursivo y se encarga de simular los movimientos en los discos, también está el main() que define la lista de pruebas que en este caso son (5, 10, 30 y 64 discos), hace los cálculos matemáticos de los movimientos esperados, reinicia el contador y calcula el tiempo.
 Respecto a los tiempos de ejecución, esto fue lo que tenía en l terminal:
