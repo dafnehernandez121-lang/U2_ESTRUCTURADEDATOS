@@ -10,14 +10,12 @@ class ListaSimplementeLigada:
 
 
     def insertar_al_inicio(self, dato):
-        """Inserta un nodo al principio de la lista, generando orden inverso."""
         q = Nodo(dato)
         q.liga = self.p
         self.p = q
 
 
     def insertar_al_final(self, dato):
-        """Inserta un nodo al final para conservar el orden original."""
         q = Nodo(dato)
         if self.p is None:
             self.p = q
@@ -31,7 +29,6 @@ class ListaSimplementeLigada:
 
 
     def insertar_antes_de(self, x, dato):
-        """Inserta un nuevo nodo antes del nodo que contiene la información X."""
         if self.p is None:
             print("La lista está vacía.")
             return
@@ -57,7 +54,6 @@ class ListaSimplementeLigada:
 
 
     def insertar_despues_de(self, x, dato):
-        """Inserta un nuevo nodo después del nodo que contiene la información X."""
         actual = self.p
         visitados = set()
         while actual is not None and actual.info != x and actual not in visitados:
@@ -73,7 +69,6 @@ class ListaSimplementeLigada:
 
 
     def apuntar_a_mismo_nodo(self, dato_origen, dato_destino):
-        """Busca el nodo_origen y hace que su liga apunte al nodo_destino."""
         nodo_origen = None
         nodo_destino = None
         
@@ -101,7 +96,6 @@ class ListaSimplementeLigada:
 
 
     def todos_apuntan_a_uno(self, dato_destino):
-        """Hace que absolutamente todos los nodos de la lista apunten al nodo con dato_destino."""
         if self.p is None:
             print("La lista está vacía.")
             return
@@ -136,7 +130,6 @@ class ListaSimplementeLigada:
             print(f"  Nodo [{nodo.info}] ---> {destino_str}")
 
     def mostrar(self):
-        """Recorre e imprime los elementos desde el inicio P (con detección de ciclos)."""
         actual = self.p
         elementos = []
         visitados = set()
@@ -179,7 +172,6 @@ if __name__ == "__main__":
         lista.insertar_al_final(nombre)
     lista.mostrar()
 
-    # 2. Menú interactivo
     while True:
         print("\n--- Opciones para manipular la lista ordenada ---")
         print("1. Insertar un nodo al inicio")
